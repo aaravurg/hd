@@ -81,6 +81,18 @@ const RegisterScreen = () => {
                     <Text style={styles.buttonText}>Sign up</Text>
                 </TouchableOpacity>
             </View>
+
+            <View style={styles.linkContainer}>
+                <Text style={styles.link}>Already have an account? </Text>
+                <TouchableOpacity
+                    onPress={() => navigation.navigate("Login")}
+                    style={styles.link}
+                >
+                    <Text style={styles.linkText}>Login</Text>
+                </TouchableOpacity>
+            </View>
+
+            
    </View>
  )
 }
@@ -117,12 +129,29 @@ const styles = StyleSheet.create({
   },
 
   buttonContainer: {
-    width: '60%',
+    width: '120%',
     justifyContent: 'center',
     alignItems: 'center',
     marginTop: 40,
     position: 'absolute',
-    top: '72%'
+    top: '78%'
+  },
+
+  buttonText: { 
+      flex: 1,
+      color: '#333333',
+      fontFamily: 'Poppins',
+      fontSize: 24,
+      fontWeight:  'bold',
+  
+  },
+
+  button: {
+    backgroundColor: '#FC6969',
+    width: '60%',
+    padding: 15,
+    borderRadius: 25,
+    alignItems: 'center',
   },
 
    inputContainer: {
@@ -134,7 +163,29 @@ const styles = StyleSheet.create({
     backgroundColor: 'white', // Bg color of input fields
     paddingHorizontal: 15, // Horizontal padding
     paddingVertical: 10, // Vertical padding
-    borderRadius: 10, // Rounds edges of text fields
-    marginTop: 20, // Ensures that the input field and buttonContainer are separated
-   }
+    borderRadius: 20, // Rounds edges of text fields
+    marginTop: 40,
+    height: 45, // Ensures that the input field and buttonContainer are separated
+   },
+
+   link : {
+    color: '#333333',
+        // fontFamily: 'Manrope',
+    fontSize: 14,
+    fontWeight: '400'
+   },
+   linkText: {
+    color: '#7871FF',
+    // fontFamily: 'Manrope',
+    fontWeight: '600',
+    marginTop: 10
+   
+  },
+  linkContainer: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: 55,
+    position: 'absolute',
+    top: '85%'
+  },
 })
