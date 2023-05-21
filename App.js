@@ -11,15 +11,8 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen 
-        options={{headerShown: false}} 
-        name="Initial" 
-        component={InitialScreen} 
-        />
-        <Stack.Screen 
-        options={{headerShown: false}} 
-        name="Register" 
-        component={RegisterScreen} />
+        <Stack.Screen options={{headerShown: false}} name="Initial" component={InitialScreen} />
+        <Stack.Screen options={{headerShown: false}} name="Register" component={RegisterScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
@@ -33,3 +26,4 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+//abc
