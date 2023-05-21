@@ -14,7 +14,7 @@ const InitialScreen = () => {
       </Text>
 
       <Image style={styles.image}
-        source={require('/Users/aarav/HackDavis/assets/horselogo.png')}
+        source={require('/Users/aarav/hd/assets/horselogo.png')}
       />
 
       <Text style={styles.subtext_one}> 
