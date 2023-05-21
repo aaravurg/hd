@@ -1,0 +1,5 @@
+# hd
+HorseHaven is a mobile app that essentially creates a virtual community for horse owners of the world. It allows users to upload pictures of their horses and share them with others enthusiastic about the horse community. These pictures are then used to create an image dataset of horses which can then be used to train a machine learning model so that the AWHC can easily recognize which horses are wild. The app provides a way for the horse community to engage with each other, all while helping benefit the larger population of horses from their fingertips.
+
+To build the app, we compartmentalized the project into two parts. The front-end and the backend. For the front-end we used figma to model out our entire user interface while the actual application was built in react native, JavaScript, and CSS. Even to access the camera we used Expo to allow for easier integration into the front-end. For the backend, we used Firebase to create an authentication system as well as a way for users to import pre-existing images of their horses.
+
